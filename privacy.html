@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Ashford & Vale Recovery Counsel</title>
+<meta name="description" content="How Ashford & Vale Recovery Counsel collects, uses, protects, and discloses personal and case information.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A2342; --navy-deep:#071830; --ivory:#FAF7F1;
+    --gold:#B08D2B; --gold-soft:#D9C384; --slate:#3D4B5C;
+    --slate-light:#7C8896; --hairline:#E4DECF; --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Inter',sans-serif;background:var(--ivory);color:var(--navy);line-height:1.6;-webkit-font-smoothing:antialiased;}
+  h1,h2,.serif{font-family:'Fraunces',serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:var(--navy);text-decoration:underline;text-decoration-color:var(--hairline);text-underline-offset:3px;}
+  a:hover{color:var(--gold);}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  header{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(250,247,241,0.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--hairline);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;text-decoration:none;}
+  .brand .mark{width:30px;height:30px;border:1.4px solid var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:14px;color:var(--gold);}
+  nav.links{display:flex;gap:36px;font-size:14.5px;font-weight:500;}
+  nav.links a{opacity:0.82;text-decoration:none;transition:opacity .2s;}
+  nav.links a:hover{opacity:1;color:var(--gold);}
+  .nav-cta{background:var(--navy);color:var(--ivory);padding:11px 22px;border-radius:3px;font-size:13.5px;font-weight:500;text-decoration:none;}
+  @media(max-width:900px){nav.links,.nav-cta{display:none;}}
+
+  .page-hero{padding:168px 0 64px;border-bottom:1px solid var(--hairline);}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold);margin-bottom:22px;}
+  .eyebrow::before{content:'';width:22px;height:1px;background:var(--gold);}
+  .page-hero h1{font-size:clamp(32px,4.5vw,48px);font-weight:500;line-height:1.12;margin-bottom:18px;max-width:680px;}
+  .page-hero p{font-size:16px;color:var(--slate);max-width:600px;}
+  .page-hero .updated{margin-top:18px;font-family:'IBM Plex Mono',monospace;font-size:12.5px;color:var(--slate-light);}
+
+  .legal-layout{display:grid;grid-template-columns:260px 1fr;gap:64px;padding:80px 0 100px;align-items:start;}
+  @media(max-width:900px){.legal-layout{grid-template-columns:1fr;gap:32px;}}
+
+  .toc{position:sticky;top:110px;border-left:1px solid var(--hairline);padding-left:24px;}
+  .toc-label{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--gold);margin-bottom:16px;}
+  .toc ol{list-style:none;counter-reset:toc;}
+  .toc li{counter-increment:toc;margin-bottom:12px;}
+  .toc li a{display:flex;gap:10px;font-size:13.5px;color:var(--slate);text-decoration:none;}
+  .toc li a::before{content:counter(toc,decimal-leading-zero);font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:12px;flex-shrink:0;}
+  .toc li a:hover{color:var(--navy);}
+
+  .legal-body section{padding:0 0 44px;border-bottom:1px solid var(--hairline);margin-bottom:44px;scroll-margin-top:110px;}
+  .legal-body section:last-child{border-bottom:none;}
+  .legal-body h2{font-size:22px;font-weight:500;margin-bottom:16px;display:flex;align-items:baseline;gap:12px;}
+  .legal-body h2 .num{font-family:'IBM Plex Mono',monospace;font-size:14px;color:var(--gold);font-weight:400;}
+  .legal-body p{font-size:15px;color:var(--slate);margin-bottom:14px;max-width:720px;}
+  .legal-body ul{margin:0 0 14px 0;padding-left:20px;max-width:700px;}
+  .legal-body li{font-size:15px;color:var(--slate);margin-bottom:8px;}
+  .legal-body h3{font-size:15.5px;font-weight:600;color:var(--navy);margin:20px 0 8px;}
+  .legal-body strong{color:var(--navy);font-weight:600;}
+  .callout{background:var(--white);border:1px solid var(--hairline);border-left:2px solid var(--gold);border-radius:4px;padding:18px 22px;font-size:14px;color:var(--slate);max-width:700px;margin:18px 0;}
+
+  footer{background:var(--navy-deep);color:rgba(250,247,241,0.55);padding:56px 0 32px;font-size:13.5px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+  .foot-grid h4{color:var(--ivory);font-size:13px;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+  .foot-grid ul{list-style:none;padding:0;}
+  .foot-grid li{margin-bottom:11px;}
+  .foot-grid a{color:rgba(250,247,241,0.55);text-decoration:none;}
+  .foot-grid a:hover{color:var(--gold-soft);}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;}
+  @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand"><span class="mark">A&amp;V</span> Ashford &amp; Vale</a>
+    <nav class="links">
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="index.html#how-it-works">How it works</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="index.html#faq">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html" class="nav-cta">Request a case review</a>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <div class="eyebrow">Legal · Privacy</div>
+    <h1>Privacy Policy</h1>
+    <p>This policy explains what personal and case information Ashford &amp; Vale Recovery Counsel collects, why we collect it, how it's protected, and the choices you have. We've tried to write it in plain language rather than pure legal boilerplate.</p>
+    <p class="updated">Last updated: July 27, 2026 · Effective as of the date shown</p>
+  </div>
+</section>
+
+  <div class="legal-body">
+
+    <section id="scope">
+      <h2><span class="num">01</span>Scope of this policy</h2>
+      <p>This policy applies to personal information we collect through our website, our client intake process, and the course of any research, verification, or claim-preparation engagement. It applies whether you're a prospective client submitting a case inquiry, a client we're actively representing, or a visitor browsing our site.</p>
+      <p>It does not cover the privacy practices of third-party institutions, registries, or holding parties we may contact on your behalf — those parties maintain their own privacy policies.</p>
+    </section>
+
+    <section id="collect">
+      <h2><span class="num">02</span>Information we collect</h2>
+      <p>We collect information in three general categories:</p>
+      <h3>Information you provide directly</h3>
+      <ul>
+        <li>Contact details — name, email address, phone number, mailing address</li>
+        <li>Case details — a description of the funds, account, or claim you believe may be owed to you</li>
+        <li>Identity and verification documents you choose to submit in support of a claim, such as identification records, proof of address, or estate documentation</li>
+        <li>Correspondence you send us, including messages, call notes, and attachments</li>
+      </ul>
+      <h3>Information generated during our research</h3>
+      <ul>
+        <li>Records located in public registries, unclaimed-property databases, or other lawfully accessible sources during our search process</li>
+        <li>Verification notes cross-referencing those records against the details you provided</li>
+      </ul>
+      <h3>Information collected automatically on our website</h3>
+      <ul>
+        <li>Device and browser information, IP address, and general location derived from it</li>
+        <li>Pages visited, time on page, and referring pages, collected via cookies and similar technologies — see <a href="#cookies">Cookies and tracking</a></li>
+      </ul>
+    </section>
+
+    <section id="use">
+      <h2><span class="num">03</span>How we use it</h2>
+      <p>We use the information above to:</p>
+      <ul>
+        <li>Assess whether a potential claim exists and whether it's worth pursuing</li>
+        <li>Verify findings against source records before presenting them to you</li>
+        <li>Prepare and submit claim documentation to the relevant holding institution or authority</li>
+        <li>Communicate with you about the status of your case</li>
+        <li>Bill the agreed research fee and, where applicable, any success fee</li>
+        <li>Meet our own legal, regulatory, and recordkeeping obligations</li>
+        <li>Maintain and improve our website's functionality and security</li>
+      </ul>
+      <div class="callout">We do not use your case information for marketing to third parties, and we do not sell personal information.</div>
+    </section>
+
+    <section id="basis">
+      <h2><span class="num">04</span>Our basis for processing</h2>
+      <p>Where applicable data protection law requires a stated legal basis, we rely on: performance of our engagement agreement with you; our legitimate interest in assessing and pursuing claims you've asked us to research; compliance with legal and regulatory obligations; and, where relevant, your consent — for example, for optional website cookies.</p>
+    </section>
+
+    <section id="share">
+      <h2><span class="num">05</span>When we share information</h2>
+      <p>We share personal information only where necessary to do the work you've engaged us for, or where the law requires it:</p>
+      <ul>
+        <li><strong>Holding institutions and authorities</strong> — the entity holding the funds in question, as required to file and process a claim</li>
+        <li><strong>Service providers</strong> — vetted vendors who support our operations (for example, secure document storage or payment processing), bound by confidentiality obligations</li>
+        <li><strong>Professional advisers</strong> — legal or accounting professionals engaged on your case, where relevant</li>
+        <li><strong>Legal and regulatory bodies</strong> — where disclosure is required by law, court order, or regulatory request</li>
+      </ul>
+      <p>We do not share your information with unrelated third parties for their own marketing purposes.</p>
+    </section>
+
+    <section id="retention">
+      <h2><span class="num">06</span>Retention</h2>
+      <p>We retain case-related records for as long as needed to complete an engagement, satisfy legal and recordkeeping obligations, and defend against or bring any related claims — typically a period of several years following a case's closure. Website analytics data is retained on a shorter, rolling basis. You may request earlier deletion, subject to our legal retention obligations; see <a href="#rights">Your rights and choices</a>.</p>
+    </section>
+
+    <section id="security">
+      <h2><span class="num">07</span>Security</h2>
+      <p>We apply administrative, technical, and physical safeguards appropriate to the sensitivity of the information involved, including access controls limiting case files to assigned staff, encryption of data in transit, and confidentiality obligations for anyone handling client information. No system is completely secure, and we cannot guarantee absolute security, but we treat safeguarding your information as a core obligation of this practice — not an afterthought.</p>
+    </section>
+
+    <section id="rights">
+      <h2><span class="num">08</span>Your rights and choices</h2>
+      <p>Depending on where you live, you may have the right to:</p>
+      <ul>
+        <li>Request access to the personal information we hold about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your information, subject to our legal and contractual retention obligations</li>
+        <li>Object to or restrict certain processing</li>
+        <li>Request a copy of your information in a portable format</li>
+        <li>Withdraw consent where processing is based on consent</li>
+      </ul>
+      <p>To exercise any of these rights, contact us using the details in <a href="#contact">Contact us</a>. We'll respond within the time frame required by applicable law.</p>
+    </section>
+
+    <section id="cookies">
+      <h2><span class="num">09</span>Cookies and tracking</h2>
+      <p>Our website uses essential cookies necessary for the site to function, and optional analytics cookies that help us understand how visitors use the site. You can control non-essential cookies through your browser settings or any cookie preference banner presented on this site. Declining analytics cookies does not affect your ability to use the site or contact us. Full detail is available in our separate Cookie Policy.</p>
+    </section>
+
+    <section id="children">
+      <h2><span class="num">10</span>Children's information</h2>
+      <p>Our services are directed at adults. We do not knowingly collect personal information from children, and we ask that case submissions relating to a minor be made by a parent, guardian, or legal representative.</p>
+    </section>
+
+    <section id="transfers">
+      <h2><span class="num">11</span>International transfers</h2>
+      <p>Where personal information is transferred across borders — for example, to a service provider located in another country — we take steps intended to ensure it receives a comparable level of protection, consistent with applicable law.</p>
+    </section>
+
+    <section id="changes">
+      <h2><span class="num">12</span>Changes to this policy</h2>
+      <p>We may update this policy from time to time to reflect changes in our practices or legal requirements. We'll post the revised policy here with an updated effective date, and where changes are material, we'll take reasonable steps to notify active clients directly.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="num">13</span>Contact us</h2>
+      <p>Questions about this policy, or requests relating to your personal information, can be directed to our team through the <a href="contact.html">Contact page</a>, or by the phone and email details listed there.</p>
+    </section>
+
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:var(--ivory);margin-bottom:14px;">Ashford &amp; Vale</div>
+        <p style="max-width:280px;color:rgba(250,247,241,0.5);">A family-founded financial recovery counsel. Careful research, transparent pricing, plain-language guidance.</p>
+      </div>
+      <div>
+        <h4>Firm</h4>
+        <ul>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="legal.html#terms">Terms of service</a></li>
+          <li><a href="legal.html#cookies">Cookie policy</a></li>
+          <li><a href="legal.html#disclaimer">Disclaimer</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Ashford &amp; Vale Recovery Counsel. All rights reserved.</span>
+      <span>No recovery is guaranteed. Fees disclosed in writing prior to engagement.</span>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
