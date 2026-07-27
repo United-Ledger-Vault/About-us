@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashford & Vale Recovery Counsel — Careful research. Recovered on your behalf.</title>
+<meta name="description" content="A family-founded financial recovery firm helping individuals and businesses locate and reclaim funds owed to them through disciplined research, verification, and case preparation — with transparent, upfront pricing.">
+
+<meta property="og:title" content="Ashford & Vale Recovery Counsel">
+<meta property="og:description" content="Careful, credentialed research to help you reclaim what may already be yours.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0A2342;
+    --navy-deep:#071830;
+    --ivory:#FAF7F1;
+    --gold:#B08D2B;
+    --gold-soft:#D9C384;
+    --slate:#3D4B5C;
+    --slate-light:#7C8896;
+    --hairline:#E4DECF;
+    --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--ivory);
+    color:var(--navy);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:0.01ms !important;transition-duration:0.01ms !important;}
+  }
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(250,247,241,0.88);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;letter-spacing:0.2px;}
+  .brand .mark{width:30px;height:30px;border:1.4px solid var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:14px;color:var(--gold);}
+  nav.links{display:flex;gap:36px;font-size:14.5px;font-weight:500;}
+  nav.links a{opacity:0.82;transition:opacity .2s;}
+  nav.links a:hover{opacity:1;color:var(--gold);}
+  .nav-cta{background:var(--navy);color:var(--ivory);padding:11px 22px;border-radius:3px;font-size:13.5px;font-weight:500;letter-spacing:0.3px;transition:background .2s;}
+  .nav-cta:hover{background:var(--navy-deep);}
+  .burger{display:none;font-size:22px;background:none;border:0;color:var(--navy);cursor:pointer;}
+  @media(max-width:900px){
+    nav.links, .nav-cta{display:none;}
+    .burger{display:block;}
+  }
+
+  /* Hero */
+  .hero{
+    padding:168px 0 96px;
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, var(--ivory) 0%, var(--ivory) 100%);
+  }
+  .ledger-lines{position:absolute;inset:0;pointer-events:none;opacity:0.5;}
+  .ledger-lines .line{position:absolute;left:0;right:0;height:1px;background:var(--hairline);}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;position:relative;z-index:2;}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px;}}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;
+    color:var(--gold);margin-bottom:26px;
+  }
+  .eyebrow::before{content:'';width:22px;height:1px;background:var(--gold);}
+
+  .hero h1{
+    font-size:clamp(38px,5vw,60px);
+    font-weight:500;
+    line-height:1.08;
+    letter-spacing:-0.5px;
+    color:var(--navy);
+    margin-bottom:26px;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold);}
+  .hero p.lede{font-size:18px;color:var(--slate);max-width:520px;margin-bottom:38px;}
+  .cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:44px;}
+  .btn-primary{
+    background:var(--navy);color:var(--ivory);padding:16px 30px;border-radius:3px;
+    font-size:14.5px;font-weight:500;letter-spacing:0.3px;border:1px solid var(--navy);
+    cursor:pointer;transition:all .25s;
+  }
+  .btn-primary:hover{background:var(--navy-deep);transform:translateY(-1px);}
+  .btn-ghost{
+    padding:16px 8px;font-size:14.5px;font-weight:500;color:var(--navy);
+    border-bottom:1px solid var(--navy);transition:opacity .2s;
+  }
+  .btn-ghost:hover{opacity:0.65;}
+
+  .hero-note{font-size:13px;color:var(--slate-light);max-width:480px;}
+
+  /* Statement panel (signature element) */
+  .statement{
+    background:var(--navy);
+    border-radius:6px;
+    padding:34px 32px 28px;
+    color:var(--ivory);
+    position:relative;
+    box-shadow:0 30px 60px -20px rgba(10,35,66,0.35);
+  }
+  .statement::before{
+    content:'CASE FILE — PRELIMINARY REVIEW';
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:1.5px;
+    color:var(--gold-soft);opacity:0.85;display:block;margin-bottom:22px;
+  }
+  .statement-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.12);
+    font-size:13.5px;
+  }
+  .statement-row:last-of-type{border-bottom:none;}
+  .statement-row span:first-child{color:rgba(250,247,241,0.6);}
+  .statement-row span:last-child{font-family:'IBM Plex Mono',monospace;color:var(--gold-soft);}
+  .statement-total{
+    margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.2);
+    display:flex;justify-content:space-between;align-items:baseline;
+  }
+  .statement-total span:first-child{font-family:'Fraunces',serif;font-size:15px;}
+  .statement-total span:last-child{font-family:'IBM Plex Mono',monospace;font-size:22px;color:var(--gold-soft);}
+
+  /* Trust bar */
+  .trustbar{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:28px 0;}
+  .trustbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
+  .trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--slate);letter-spacing:0.2px;}
+  .trust-item .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);}
+
+  /* Section shell */
+  section{padding:110px 0;}
+  .section-head{max-width:640px;margin-bottom:64px;}
+  .section-head .eyebrow{margin-bottom:20px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:500;line-height:1.15;margin-bottom:18px;}
+  .section-head p{font-size:16.5px;color:var(--slate);}
+
+  /* Stats */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hairline);}
+  .stat{padding:40px 28px;border-right:1px solid var(--hairline);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:'IBM Plex Mono',monospace;font-size:34px;color:var(--gold);font-weight:500;}
+  .stat .label{font-size:13px;color:var(--slate);margin-top:10px;letter-spacing:0.2px;}
+  @media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr);}.stat{border-bottom:1px solid var(--hairline);}}
+
+  /* Why us */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);border:1px solid var(--hairline);}
+  .why-card{background:var(--ivory);padding:40px 34px;}
+  .why-card .ref{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:1px;margin-bottom:20px;display:block;}
+  .why-card h3{font-size:19px;font-weight:500;margin-bottom:12px;}
+  .why-card p{font-size:14.5px;color:var(--slate);}
+  @media(max-width:900px){.why-grid{grid-template-columns:1fr;}}
+
+  /* Process (ledger timeline) */
+  .process{background:var(--navy);color:var(--ivory);}
+  .process .section-head p{color:rgba(250,247,241,0.65);}
+  .process .eyebrow{color:var(--gold-soft);}
+  .process .eyebrow::before{background:var(--gold-soft);}
+  .timeline{border-top:1px solid rgba(255,255,255,0.15);}
+  .tstep{
+    display:grid;grid-template-columns:90px 1fr 1fr;gap:32px;
+    padding:30px 0;border-bottom:1px solid rgba(255,255,255,0.15);align-items:baseline;
+  }
+  .tstep .n{font-family:'IBM Plex Mono',monospace;color:var(--gold-soft);font-size:14px;}
+  .tstep h3{font-size:18px;font-weight:500;}
+  .tstep p{font-size:14px;color:rgba(250,247,241,0.62);}
+  @media(max-width:800px){.tstep{grid-template-columns:1fr;gap:8px;}.tstep .n{font-size:12px;}}
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .testi{background:var(--white);border:1px solid var(--hairline);border-radius:6px;padding:32px 28px;}
+  .testi .quote{font-family:'Fraunces',serif;font-style:italic;font-size:16.5px;line-height:1.55;color:var(--navy);margin-bottom:22px;}
+  .testi .who{font-size:13px;color:var(--slate-light);border-top:1px solid var(--hairline);padding-top:16px;}
+  @media(max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:24px 0;display:flex;justify-content:space-between;align-items:center;
+    font-family:'Fraunces',serif;font-size:17px;font-weight:500;color:var(--navy);gap:20px;
+  }
+  .faq-q .plus{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:18px;transition:transform .25s;flex-shrink:0;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a p{font-size:14.5px;color:var(--slate);padding-bottom:24px;max-width:680px;}
+
+  /* Final CTA */
+  .final-cta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);color:var(--ivory);text-align:center;}
+  .final-cta h2{font-size:clamp(30px,4vw,44px);font-weight:500;margin-bottom:20px;}
+  .final-cta p{color:rgba(250,247,241,0.65);max-width:520px;margin:0 auto 38px;font-size:16.5px;}
+  .final-cta .btn-primary{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);font-weight:600;}
+  .final-cta .btn-primary:hover{background:var(--gold-soft);border-color:var(--gold-soft);}
+
+  /* Footer */
+  footer{background:var(--navy-deep);color:rgba(250,247,241,0.55);padding:64px 0 32px;font-size:13.5px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+  .foot-grid h4{color:var(--ivory);font-size:13px;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+  .foot-grid ul{list-style:none;}
+  .foot-grid li{margin-bottom:11px;}
+  .foot-grid a:hover{color:var(--gold-soft);}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;}
+  @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* Legal Pages */
+.page-hero{
+    padding:140px 0 60px;
+    border-bottom:1px solid var(--hairline);
+}
+
+.page-hero h1{
+    font-size:clamp(40px,5vw,60px);
+    margin:18px 0;
+}
+
+.page-hero p{
+    max-width:760px;
+    color:var(--slate);
+}
+
+.updated{
+    margin-top:20px;
+    font-size:14px;
+    color:var(--slate-light);
+}
+
+.legal-body{
+    max-width:900px;
+    margin:80px auto;
+    padding:0 32px;
+}
+
+.legal-body section{
+    padding:0 0 70px;
+}
+
+.legal-body h2{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    font-size:34px;
+    margin-bottom:24px;
+}
+
+.legal-body h2 .num{
+    font-family:'IBM Plex Mono', monospace;
+    color:var(--gold);
+    font-size:18px;
+}
+
+.legal-body h3{
+    margin:30px 0 12px;
+    font-size:22px;
+    font-family:'Fraunces', serif;
+}
+
+.legal-body p{
+    color:var(--slate);
+    margin-bottom:18px;
+    line-height:1.8;
+}
+
+.legal-body ul{
+    margin:16px 0 24px 22px;
+}
+
+.legal-body li{
+    margin-bottom:12px;
+    color:var(--slate);
+    line-height:1.7;
+}
+
+.callout{
+    background:#fff;
+    border-left:4px solid var(--gold);
+    padding:22px 24px;
+    margin:30px 0;
+    border-radius:6px;
+    box-shadow:0 8px 24px rgba(10,35,66,.05);
+}
+
+@media(max-width:768px){
+
+    .legal-body{
+        padding:0 22px;
+        margin:50px auto;
+    }
+
+    .legal-body h2{
+        font-size:28px;
+    }
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="mark">A&V</span> Ashford &amp; Vale</a>
+    <nav class="links">
+      <a href="about.html">About</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/+15713529362">Contact</a>
+    </nav>
+    <a href="https://wa.me/+15713529362" class="nav-cta">Request a case review</a>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
+
+<section class="page-hero">
+    <div class="wrap">
+        <div class="eyebrow">Legal · Terms</div>
+
+        <h1>Terms of Service</h1>
+
+        <p>
+            These Terms of Service govern your use of the Ashford &amp; Vale
+            Recovery Counsel website and any research, claim preparation,
+            verification, recovery, or related services provided by our firm.
+            By accessing this website or engaging our services, you agree to
+            these Terms.
+        </p>
+
+        <p class="updated">
+            Last updated: July 27, 2026 · Effective immediately
+        </p>
+    </div>
+</section>
+
+<div class="legal-body">
+
+<section id="acceptance">
+
+<h2>
+<span class="num">01</span>
+Acceptance of These Terms
+</h2>
+
+<p>
+
+By accessing this website, requesting a case review, submitting information,
+or engaging Ashford &amp; Vale Recovery Counsel ("Ashford &amp; Vale,"
+"we," "our," or "us"), you acknowledge that you have read,
+understood, and agree to be bound by these Terms of Service.
+
+</p>
+
+<p>
+
+If you do not agree with these Terms, please discontinue use of the
+website and do not submit personal or case information.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>
+<span class="num">02</span>
+Our Services
+</h2>
+
+<p>
+
+Ashford &amp; Vale provides professional financial recovery research,
+verification, documentation, and claim preparation services.
+
+</p>
+
+<p>
+
+Depending on the engagement, our work may include:
+
+</p>
+
+<ul>
+
+<li>Researching public and private records</li>
+
+<li>Identifying potential unclaimed assets or funds</li>
+
+<li>Verifying ownership information</li>
+
+<li>Preparing claim documentation</li>
+
+<li>Communicating with holding institutions where authorized</li>
+
+<li>Providing guidance throughout the recovery process</li>
+
+</ul>
+
+<p>
+
+Every engagement is unique. The specific services provided will be outlined
+in your written engagement agreement.
+
+</p>
+
+</section>
+
+<section id="eligibility">
+
+<h2>
+<span class="num">03</span>
+Eligibility
+</h2>
+
+<p>
+
+You represent that you are at least eighteen (18) years of age and legally
+capable of entering into a binding agreement.
+
+</p>
+
+<p>
+
+If you are acting on behalf of another individual, an estate,
+trust, corporation, or organization, you represent that you have
+authority to do so.
+
+</p>
+
+</section>
+
+<section id="relationship">
+
+<h2>
+<span class="num">04</span>
+No Attorney-Client Relationship
+</h2>
+
+<p>
+
+Unless expressly stated in a separate written agreement, Ashford &amp; Vale
+is not acting as your law firm and does not provide legal advice.
+
+</p>
+
+<p>
+
+Nothing contained on this website or communicated during an initial inquiry
+creates an attorney-client relationship.
+
+</p>
+
+<p>
+
+Where legal services become appropriate, clients may be referred to qualified
+legal professionals.
+
+</p>
+
+</section>
+
+<section id="engagement">
+
+<h2>
+<span class="num">05</span>
+When an Engagement Begins
+</h2>
+
+<p>
+
+Submitting an inquiry or requesting a case review does not automatically
+establish a client relationship.
+
+</p>
+
+<p>
+
+Our engagement begins only after:
+
+</p>
+
+<ul>
+
+<li>We determine the matter is appropriate for review;</li>
+
+<li>Both parties agree to the proposed scope of work;</li>
+
+<li>Required documentation has been provided;</li>
+
+<li>Any applicable fees have been disclosed and accepted.</li>
+
+</ul>
+
+</section>
+
+<section id="fees">
+
+<h2>
+<span class="num">06</span>
+Fees and Payment
+</h2>
+
+<p>
+
+Our fees are disclosed in writing before any engagement begins. Depending on
+the nature of the matter, services may be offered on a fixed-fee basis, an
+hourly basis, a contingency or success-fee basis where permitted by law, or a
+combination of these arrangements.
+
+</p>
+
+<p>
+
+Unless otherwise agreed in writing, invoices are due upon receipt. Failure to
+make timely payment may result in suspension or termination of services.
+
+</p>
+
+<p>
+
+Any government filing fees, courier charges, notarization costs, taxes, or
+other third-party expenses remain the responsibility of the client unless
+otherwise stated in writing.
+
+</p>
+
+</section>
+
+<section id="client-responsibilities">
+
+<h2>
+<span class="num">07</span>
+Client Responsibilities
+</h2>
+
+<p>
+
+To allow us to properly evaluate and pursue your claim, you agree to provide
+accurate, complete, and truthful information.
+
+</p>
+
+<ul>
+
+<li>Provide documents that are accurate and authentic.</li>
+
+<li>Notify us promptly of any changes affecting your claim.</li>
+
+<li>Respond to reasonable requests for additional information.</li>
+
+<li>Review documents before signing or submitting them.</li>
+
+<li>Maintain copies of important records for your own files.</li>
+
+</ul>
+
+<p>
+
+We are not responsible for delays or unsuccessful claims resulting from
+incorrect, incomplete, misleading, or outdated information supplied by a
+client or third party.
+
+</p>
+
+</section>
+
+<section id="no-guarantee">
+
+<h2>
+<span class="num">08</span>
+No Guarantee of Recovery
+</h2>
+
+<p>
+
+Every claim is unique and depends upon factors outside our control, including
+the policies of financial institutions, government agencies, custodians,
+record holders, and applicable laws.
+
+</p>
+
+<div class="callout">
+
+Ashford &amp; Vale makes no guarantee that funds will be located, verified,
+approved, recovered, or paid. Any estimates, opinions, or preliminary findings
+are informational only and should not be interpreted as guarantees of a
+successful outcome.
+
+</div>
+
+<p>
+
+Our obligation is to perform professional research and claim preparation using
+reasonable care and diligence—not to guarantee a specific result.
+
+</p>
+
+</section>
+
+<section id="communications">
+
+<h2>
+<span class="num">09</span>
+Communications
+</h2>
+
+<p>
+
+By contacting us or becoming a client, you consent to receive communications
+related to your inquiry or engagement through email, telephone, text message,
+postal mail, or other reasonable methods.
+
+</p>
+
+<p>
+
+These communications may include requests for documentation, updates regarding
+your claim, invoices, appointment scheduling, identity verification, and other
+administrative notices.
+
+</p>
+
+<p>
+
+You are responsible for ensuring your contact information remains current.
+Ashford &amp; Vale is not responsible for missed communications caused by
+incorrect contact information provided by you.
+
+</p>
+
+</section>
+
+<section id="intellectual-property">
+
+<h2>
+<span class="num">10</span>
+Intellectual Property
+</h2>
+
+<p>
+
+All content available on this website—including text, graphics, branding,
+logos, layouts, designs, photographs, software, downloadable materials, and
+other content—is owned by or licensed to Ashford &amp; Vale Recovery Counsel
+and is protected by applicable intellectual property laws.
+
+</p>
+
+<p>
+
+You may access this website solely for personal, informational, and
+non-commercial purposes. You may not reproduce, modify, distribute, publish,
+sell, create derivative works from, or otherwise exploit any website content
+without our prior written permission.
+
+</p>
+
+<p>
+
+Unauthorized use of our intellectual property may result in legal action.
+
+</p>
+
+</section>
+<section id="confidentiality">
+
+<h2>
+<span class="num">11</span>
+Confidentiality
+</h2>
+
+<p>
+
+We recognize that claim-related information is often sensitive. Subject to
+applicable law and the terms of our Privacy Policy, we take reasonable steps
+to protect the confidentiality of information you provide to us.
+
+</p>
+
+<p>
+
+Information will only be disclosed where necessary to perform the services you
+have requested, where you authorize us to do so, or where disclosure is
+required by law, regulation, or court order.
+
+</p>
+
+<p>
+
+Our confidentiality obligations survive the completion or termination of an
+engagement, except where disclosure is otherwise legally required.
+
+</p>
+
+</section>
+<section id="third-parties">
+
+<h2>
+<span class="num">12</span>
+Third-Party Services
+</h2>
+
+<p>
+
+In carrying out our services, we may rely on third-party providers including
+financial institutions, public registries, payment processors, document
+delivery services, identity verification providers, cloud storage vendors,
+government agencies, or other organizations.
+
+</p>
+
+<p>
+
+Although we carefully select service providers where practical, Ashford &amp;
+Vale does not control their operations and cannot be responsible for delays,
+errors, security incidents, outages, or actions taken by independent third
+parties.
+
+</p>
+
+<p>
+
+Links to third-party websites are provided solely for convenience and do not
+constitute our endorsement of those websites or their content.
+
+</p>
+
+</section>
+<section id="liability">
+
+<h2>
+<span class="num">13</span>
+Limitation of Liability
+</h2>
+
+<p>
+
+To the fullest extent permitted by applicable law, Ashford &amp; Vale Recovery
+Counsel shall not be liable for any indirect, incidental, consequential,
+special, exemplary, or punitive damages arising from your use of our website
+or services.
+
+</p>
+
+<p>
+
+This includes, without limitation, damages relating to lost profits, lost
+business opportunities, loss of data, interruption of business, delayed
+recoveries, unsuccessful claims, or reliance on information obtained through
+our website.
+
+</p>
+
+<div class="callout">
+
+Where liability cannot legally be excluded, our total liability arising from
+any engagement shall not exceed the total amount of fees actually paid by the
+client for the specific services giving rise to the claim.
+
+</div>
+
+<p>
+
+Nothing in these Terms limits liability that cannot legally be excluded under
+applicable law.
+
+</p>
+
+</section>
+<section id="indemnification">
+
+<h2>
+<span class="num">14</span>
+Indemnification
+</h2>
+
+<p>
+
+You agree to indemnify, defend, and hold harmless Ashford &amp; Vale Recovery
+Counsel, its owners, employees, contractors, affiliates, successors, and
+representatives from any claims, liabilities, losses, damages, costs, or
+expenses—including reasonable legal fees—arising from:
+
+</p>
+
+<ul>
+
+<li>Your breach of these Terms of Service;</li>
+
+<li>Information or documents you provide that are inaccurate, misleading, or fraudulent;</li>
+
+<li>Your misuse of our website or services;</li>
+
+<li>Your violation of applicable laws or the rights of another person or organization.</li>
+
+</ul>
+
+</section>
+<section id="termination">
+
+<h2>
+<span class="num">15</span>
+Termination
+</h2>
+
+<p>
+
+Either you or Ashford &amp; Vale may terminate an engagement at any time,
+subject to the terms of any written service agreement.
+
+</p>
+
+<p>
+
+We reserve the right to suspend or terminate services immediately if:
+
+</p>
+
+<ul>
+
+<li>Required information is withheld;</li>
+
+<li>Fraudulent or misleading information is discovered;</li>
+
+<li>Fees remain unpaid;</li>
+
+<li>Continuation of the engagement would violate applicable law or professional obligations;</li>
+
+<li>The relationship becomes abusive, threatening, or otherwise unsuitable for continued engagement.</li>
+
+</ul>
+
+<p>
+
+Termination does not affect any rights, obligations, payment responsibilities,
+or confidentiality provisions that by their nature survive termination.
+
+</p>
+
+</section>
