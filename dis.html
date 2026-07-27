@@ -1,1 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashford & Vale Recovery Counsel — Careful research. Recovered on your behalf.</title>
+<meta name="description" content="A family-founded financial recovery firm helping individuals and businesses locate and reclaim funds owed to them through disciplined research, verification, and case preparation — with transparent, upfront pricing.">
 
+<meta property="og:title" content="Ashford & Vale Recovery Counsel">
+<meta property="og:description" content="Careful, credentialed research to help you reclaim what may already be yours.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --navy:#0A2342;
+    --navy-deep:#071830;
+    --ivory:#FAF7F1;
+    --gold:#B08D2B;
+    --gold-soft:#D9C384;
+    --slate:#3D4B5C;
+    --slate-light:#7C8896;
+    --hairline:#E4DECF;
+    --white:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--ivory);
+    color:var(--navy);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',serif;}
+  .mono{font-family:'IBM Plex Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.wrap{padding:0 20px;}}
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation-duration:0.01ms !important;transition-duration:0.01ms !important;}
+  }
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:100;
+    background:rgba(250,247,241,0.88);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    border-bottom:1px solid var(--hairline);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:78px;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;letter-spacing:0.2px;}
+  .brand .mark{width:30px;height:30px;border:1.4px solid var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:14px;color:var(--gold);}
+  nav.links{display:flex;gap:36px;font-size:14.5px;font-weight:500;}
+  nav.links a{opacity:0.82;transition:opacity .2s;}
+  nav.links a:hover{opacity:1;color:var(--gold);}
+  .nav-cta{background:var(--navy);color:var(--ivory);padding:11px 22px;border-radius:3px;font-size:13.5px;font-weight:500;letter-spacing:0.3px;transition:background .2s;}
+  .nav-cta:hover{background:var(--navy-deep);}
+  .burger{display:none;font-size:22px;background:none;border:0;color:var(--navy);cursor:pointer;}
+  @media(max-width:900px){
+    nav.links, .nav-cta{display:none;}
+    .burger{display:block;}
+  }
+
+  /* Hero */
+  .hero{
+    padding:168px 0 96px;
+    position:relative;
+    overflow:hidden;
+    background:
+      linear-gradient(180deg, var(--ivory) 0%, var(--ivory) 100%);
+  }
+  .ledger-lines{position:absolute;inset:0;pointer-events:none;opacity:0.5;}
+  .ledger-lines .line{position:absolute;left:0;right:0;height:1px;background:var(--hairline);}
+  .hero-grid{display:grid;grid-template-columns:1.15fr 0.85fr;gap:64px;align-items:center;position:relative;z-index:2;}
+  @media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:48px;}}
+
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:9px;
+    font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:1.2px;text-transform:uppercase;
+    color:var(--gold);margin-bottom:26px;
+  }
+  .eyebrow::before{content:'';width:22px;height:1px;background:var(--gold);}
+
+  .hero h1{
+    font-size:clamp(38px,5vw,60px);
+    font-weight:500;
+    line-height:1.08;
+    letter-spacing:-0.5px;
+    color:var(--navy);
+    margin-bottom:26px;
+  }
+  .hero h1 em{font-style:italic;color:var(--gold);}
+  .hero p.lede{font-size:18px;color:var(--slate);max-width:520px;margin-bottom:38px;}
+  .cta-row{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:44px;}
+  .btn-primary{
+    background:var(--navy);color:var(--ivory);padding:16px 30px;border-radius:3px;
+    font-size:14.5px;font-weight:500;letter-spacing:0.3px;border:1px solid var(--navy);
+    cursor:pointer;transition:all .25s;
+  }
+  .btn-primary:hover{background:var(--navy-deep);transform:translateY(-1px);}
+  .btn-ghost{
+    padding:16px 8px;font-size:14.5px;font-weight:500;color:var(--navy);
+    border-bottom:1px solid var(--navy);transition:opacity .2s;
+  }
+  .btn-ghost:hover{opacity:0.65;}
+
+  .hero-note{font-size:13px;color:var(--slate-light);max-width:480px;}
+
+  /* Statement panel (signature element) */
+  .statement{
+    background:var(--navy);
+    border-radius:6px;
+    padding:34px 32px 28px;
+    color:var(--ivory);
+    position:relative;
+    box-shadow:0 30px 60px -20px rgba(10,35,66,0.35);
+  }
+  .statement::before{
+    content:'CASE FILE — PRELIMINARY REVIEW';
+    font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:1.5px;
+    color:var(--gold-soft);opacity:0.85;display:block;margin-bottom:22px;
+  }
+  .statement-row{
+    display:flex;justify-content:space-between;align-items:baseline;
+    padding:13px 0;border-bottom:1px solid rgba(255,255,255,0.12);
+    font-size:13.5px;
+  }
+  .statement-row:last-of-type{border-bottom:none;}
+  .statement-row span:first-child{color:rgba(250,247,241,0.6);}
+  .statement-row span:last-child{font-family:'IBM Plex Mono',monospace;color:var(--gold-soft);}
+  .statement-total{
+    margin-top:22px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.2);
+    display:flex;justify-content:space-between;align-items:baseline;
+  }
+  .statement-total span:first-child{font-family:'Fraunces',serif;font-size:15px;}
+  .statement-total span:last-child{font-family:'IBM Plex Mono',monospace;font-size:22px;color:var(--gold-soft);}
+
+  /* Trust bar */
+  .trustbar{border-top:1px solid var(--hairline);border-bottom:1px solid var(--hairline);padding:28px 0;}
+  .trustbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:24px;}
+  .trust-item{display:flex;align-items:center;gap:10px;font-size:13px;color:var(--slate);letter-spacing:0.2px;}
+  .trust-item .dot{width:5px;height:5px;border-radius:50%;background:var(--gold);}
+
+  /* Section shell */
+  section{padding:110px 0;}
+  .section-head{max-width:640px;margin-bottom:64px;}
+  .section-head .eyebrow{margin-bottom:20px;}
+  .section-head h2{font-size:clamp(28px,3.4vw,40px);font-weight:500;line-height:1.15;margin-bottom:18px;}
+  .section-head p{font-size:16.5px;color:var(--slate);}
+
+  /* Stats */
+  .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--hairline);}
+  .stat{padding:40px 28px;border-right:1px solid var(--hairline);}
+  .stat:last-child{border-right:none;}
+  .stat .num{font-family:'IBM Plex Mono',monospace;font-size:34px;color:var(--gold);font-weight:500;}
+  .stat .label{font-size:13px;color:var(--slate);margin-top:10px;letter-spacing:0.2px;}
+  @media(max-width:900px){.stats-grid{grid-template-columns:repeat(2,1fr);}.stat{border-bottom:1px solid var(--hairline);}}
+
+  /* Why us */
+  .why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--hairline);border:1px solid var(--hairline);}
+  .why-card{background:var(--ivory);padding:40px 34px;}
+  .why-card .ref{font-family:'IBM Plex Mono',monospace;font-size:12px;color:var(--gold);letter-spacing:1px;margin-bottom:20px;display:block;}
+  .why-card h3{font-size:19px;font-weight:500;margin-bottom:12px;}
+  .why-card p{font-size:14.5px;color:var(--slate);}
+  @media(max-width:900px){.why-grid{grid-template-columns:1fr;}}
+
+  /* Process (ledger timeline) */
+  .process{background:var(--navy);color:var(--ivory);}
+  .process .section-head p{color:rgba(250,247,241,0.65);}
+  .process .eyebrow{color:var(--gold-soft);}
+  .process .eyebrow::before{background:var(--gold-soft);}
+  .timeline{border-top:1px solid rgba(255,255,255,0.15);}
+  .tstep{
+    display:grid;grid-template-columns:90px 1fr 1fr;gap:32px;
+    padding:30px 0;border-bottom:1px solid rgba(255,255,255,0.15);align-items:baseline;
+  }
+  .tstep .n{font-family:'IBM Plex Mono',monospace;color:var(--gold-soft);font-size:14px;}
+  .tstep h3{font-size:18px;font-weight:500;}
+  .tstep p{font-size:14px;color:rgba(250,247,241,0.62);}
+  @media(max-width:800px){.tstep{grid-template-columns:1fr;gap:8px;}.tstep .n{font-size:12px;}}
+
+  /* Testimonials */
+  .testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;}
+  .testi{background:var(--white);border:1px solid var(--hairline);border-radius:6px;padding:32px 28px;}
+  .testi .quote{font-family:'Fraunces',serif;font-style:italic;font-size:16.5px;line-height:1.55;color:var(--navy);margin-bottom:22px;}
+  .testi .who{font-size:13px;color:var(--slate-light);border-top:1px solid var(--hairline);padding-top:16px;}
+  @media(max-width:900px){.testi-grid{grid-template-columns:1fr;}}
+
+  /* FAQ */
+  .faq-item{border-bottom:1px solid var(--hairline);}
+  .faq-q{
+    width:100%;text-align:left;background:none;border:none;cursor:pointer;
+    padding:24px 0;display:flex;justify-content:space-between;align-items:center;
+    font-family:'Fraunces',serif;font-size:17px;font-weight:500;color:var(--navy);gap:20px;
+  }
+  .faq-q .plus{font-family:'IBM Plex Mono',monospace;color:var(--gold);font-size:18px;transition:transform .25s;flex-shrink:0;}
+  .faq-item.open .plus{transform:rotate(45deg);}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .3s ease;}
+  .faq-a p{font-size:14.5px;color:var(--slate);padding-bottom:24px;max-width:680px;}
+
+  /* Final CTA */
+  .final-cta{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-deep) 100%);color:var(--ivory);text-align:center;}
+  .final-cta h2{font-size:clamp(30px,4vw,44px);font-weight:500;margin-bottom:20px;}
+  .final-cta p{color:rgba(250,247,241,0.65);max-width:520px;margin:0 auto 38px;font-size:16.5px;}
+  .final-cta .btn-primary{background:var(--gold);border-color:var(--gold);color:var(--navy-deep);font-weight:600;}
+  .final-cta .btn-primary:hover{background:var(--gold-soft);border-color:var(--gold-soft);}
+
+  /* Footer */
+  footer{background:var(--navy-deep);color:rgba(250,247,241,0.55);padding:64px 0 32px;font-size:13.5px;}
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px;}
+  .foot-grid h4{color:var(--ivory);font-size:13px;letter-spacing:0.5px;text-transform:uppercase;margin-bottom:18px;font-weight:500;}
+  .foot-grid ul{list-style:none;}
+  .foot-grid li{margin-bottom:11px;}
+  .foot-grid a:hover{color:var(--gold-soft);}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:26px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;font-size:12.5px;}
+  @media(max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in{opacity:1;transform:translateY(0);}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="brand"><span class="mark">A&V</span> Ashford &amp; Vale</a>
+    <nav class="links">
+      <a href="about.html">About</a>
+      <a href="#how-it-works">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://wa.me/+15713529362">Contact</a>
+    </nav>
+    <a href="https://wa.me/+15713529362" class="nav-cta">Request a case review</a>
+    <button class="burger" aria-label="Menu">☰</button>
+  </div>
+</header>
