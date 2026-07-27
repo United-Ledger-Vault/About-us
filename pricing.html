@@ -225,10 +225,12 @@
   .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
   .reveal.in{opacity:1;transform:translateY(0);}
 
-  /* Legal Pages */
-.page-hero{
-    padding:140px 0 60px;
-    border-bottom:1px solid var(--hairline);
+.legal-body{
+    width:100%;
+    max-width:900px;
+    margin:80px auto;
+    padding:0 32px;
+    display:block;
 }
 
 .page-hero h1{
@@ -253,8 +255,11 @@
     padding:0 32px;
 }
 
-.legal-body section{
+.legal-body > section{
+    display:block;
+    width:100%;
     padding:0 0 70px;
+    margin:0;
 }
 
 .legal-body h2{
@@ -332,6 +337,7 @@
     <button class="burger" aria-label="Menu">☰</button>
   </div>
 </header>
+
 
 
 <section class="page-hero">
