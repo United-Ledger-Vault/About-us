@@ -366,6 +366,7 @@
   </div>
 </div>
 
+
 <footer>
   <div class="wrap">
     <div class="foot-grid">
@@ -377,22 +378,20 @@
         <h4>Firm</h4>
         <ul>
           <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="https://wa.me/+15713529362">Contact</a></li>
         </ul>
       </div>
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="index.html#faq">FAQ</a></li>
-          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#how-it-works">How it works</a></li>
         </ul>
       </div>
       <div>
         <h4>Legal</h4>
         <ul>
-          <li><a href="privacy-policy.html">Privacy policy</a></li>
+          <li><a href="privacy.html">Privacy policy</a></li>
           <li><a href="legal.html#terms">Terms of service</a></li>
           <li><a href="legal.html#cookies">Cookie policy</a></li>
           <li><a href="legal.html#disclaimer">Disclaimer</a></li>
@@ -405,6 +404,24 @@
     </div>
   </div>
 </footer>
+
+<script>
+  document.querySelectorAll('.faq-q').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      const item = btn.parentElement;
+      const ans = item.querySelector('.faq-a');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('.faq-a').style.maxHeight=null;});
+      if(!isOpen){ item.classList.add('open'); ans.style.maxHeight = ans.scrollHeight+'px'; }
+    });
+  });
+
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  },{threshold:0.12});
+  revealEls.forEach(el=>io.observe(el));
+</script>
 
 </body>
 </html>
